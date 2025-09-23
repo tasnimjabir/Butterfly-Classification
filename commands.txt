@@ -1,0 +1,32 @@
+# Create vertual environment:
+
+python -m venv venv
+venv\Scripts\Activate
+
+
+# Error:
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted -Force
+
+
+# Install Django:
+
+pip install Django
+
+
+# Start Project:
+
+django-admin startproject FindButterfly
+
+
+# Create App:
+
+python manage.py startapp ButterflyClassification
+
+# Copy:
+
+venv\Scripts\Activate
+cd FindButterfly
+python manage.py runserver
+
+
